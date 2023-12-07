@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './TaskForm.css'
 
 
-const TaskForm = ({ addTask }) => {
+const TaskForm = ({addTask}) => {
     const[openModal, setOpenModal] = useState(false);
 
     const handleOpenNewTaskModal = () => {
@@ -14,19 +14,20 @@ const TaskForm = ({ addTask }) => {
     }
 
     const handleAddNewTask = (e) => {
-        console.log("entro");
-        e.preventDefault();
-        const {title} = e.target;
-        if(title){
-            addTask({title: title.value});
+        e.preventDefault()
+        const {title} = e.target
+        if(title.value){
+            addTask({ title: title.value })
+            handleCloseNewTaskModal()
+        }else{
+            alert('Escribir una tarea')
         }
-        handleCloseNewTaskModal();
     }
 
 
     return (
         <div>
-            <button onClick={handleOpenNewTaskModal}>Nueva Tarea</button>
+            <button className='new-task-btn' onClick={handleOpenNewTaskModal}>Nueva Tarea</button>
             {openModal && <div className='modal-background'>
             <div className='modal'>
                 <h2>agregar nueva tarea</h2>

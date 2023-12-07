@@ -1,0 +1,10 @@
+.task-list-background{
+    height: 55vh;
+    text-align: center;
+    margin-top: 25px;
+    overflow-y: scroll;
+}
+
+.task-list-background::-webkit-scrollbar{
+    display: none;
+}

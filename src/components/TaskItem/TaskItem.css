@@ -1,0 +1,26 @@
+.task-item-background{
+    background-color: rgb(236, 236, 236);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+}
+
+.option-task-btn{
+    display: flex;
+}
+
+.option-task-btn .btn-option{
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+.delete{
+    color: rgb(182, 3, 3);
+}
+.check{
+    color: rgb(35, 139, 35);
+}

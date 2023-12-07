@@ -1,3 +1,10 @@
+.new-task-btn{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
 .modal-background{
     position: absolute;
     top: 0;

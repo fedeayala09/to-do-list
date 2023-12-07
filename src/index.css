@@ -3,3 +3,44 @@
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+:root{
+    --bg-color: rgba(143, 10, 161, 0.603);
+}
+
+.app-background{
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box{
+    background-color: #2a8ce7d7;
+    width: 100vh;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.35);
+}
+
+.title-task-h1 h1{
+    height: 800;
+}
+
+.search-task{
+    display: flex;
+    flex-direction: column;
+}
+
+.search-task label{
+    line-height: 35px;
+}
+
+.search-task input{
+    padding: 5px;
+    border-radius: 15px;
+}
